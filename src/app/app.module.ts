@@ -12,7 +12,6 @@ import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 
-import { AppComponent } from './app.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
 import { PictureComponent } from './picture/picture.component';
@@ -33,7 +32,9 @@ export const firebaseConfig = {
     PictureComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireDatabaseModule
   ],
   providers: [],
   bootstrap: [AppComponent]
