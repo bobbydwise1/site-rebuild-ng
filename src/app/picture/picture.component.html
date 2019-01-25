@@ -1,3 +1,7 @@
-<p>
-  picture works!
-</p>
+<h2>Picture Gallery</h2>
+
+<div *ngFor="let picture of pictures | async" (click)="goToDetailPage(picture)" class="panel panel-default">
+  <div class="panel-body">
+    <h3><em>{{picture.title}}</em> by {{picture.link}}</h3>
+  </div>
+</div>

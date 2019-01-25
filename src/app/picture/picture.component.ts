@@ -6,15 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./picture.component.css']
 })
 export class PictureComponent implements OnInit {
-  // picture: Picture[] = [
-  //   new Picture('name1','hyperlink1'),
-  //   new Picture('name2','hyperlink2'),
-  //   new Picture('name3','hyperlink3'),
-  // ];
+  key: string;
+  name: string;
+  url: string;
+  file: File;
 
-  constructor() { }
-
-  ngOnInit() {
+  constructor(file: File) {
+    this.file = File;
   }
-
 }
