@@ -1,4 +1,8 @@
 export class Picture {
-  public done: boolean = false;
-  constructor(public description: string, public priority: number) {   }
-}
+    public url: string;
+  constructor(
+    public key: number,
+    public title: string,
+    public file: string)
+    {}
+  }
