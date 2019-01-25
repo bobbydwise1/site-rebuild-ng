@@ -19,7 +19,6 @@ export class AppComponent {
     new Picture(3,"picture 1","filename1")
   ];
 
-console.log(masterPictureList);
 
   addPicture(newPicture: Picture) {
     this.masterPictureList.push(newPicture);
