@@ -1,9 +1,13 @@
-<h1>This is the app component html</h1>
+<div style="text-align: center">
+  <h1>This is the app component html</h1>
+  <h3>{{ currentFocus }}</h3>
 
-<p> search bar should appear below here:</p>
-<app-search-bar></app-search-bar>
-<p> gallery should appear below here:</p>
-<app-gallery></app-gallery>
-<p> pictures should appear below here:</p>
 
-<app-picture></app-picture>
+  <p> search bar should appear below here:</p>
+  <app-search-bar></app-search-bar>
+
+  <p> gallery should appear below here:</p>
+  <app-gallery></app-gallery>
+
+  <p> pictures should appear below here:</p>
+  <app-picture [childPicture]="masterPictureList"></app-picture>

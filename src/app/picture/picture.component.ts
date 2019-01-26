@@ -1,5 +1,5 @@
-import { Picture } from '../models/picture.model';
 import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Picture } from '../models/picture.model';
 
 @Component({
   selector: 'app-picture',
@@ -7,4 +7,10 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./picture.component.css']
 })
 export class PictureComponent {
+  @Input() childSelectedPicture: Picture;
+  @Output() clickedDone = new EventEmitter();
+
+  finishedEditing() {
+    this.clickedDone.emit();
+  }
 }

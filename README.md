@@ -6,20 +6,20 @@
 
 ## Description
 
-Attempt to clone the look and functioning of website of your choosing using the Angular framework.  This part of a 2-week project.
+Attempt to clone the look and functioning of website of your choosing using the Angular framework.  This part of a 2-week project.  The clone attempt will be of the Deviantart.com website.
 
 ## Setup/Installation Requirements
 
 * _Clone the project files from the associated Github repository._
 * _Navigate to the root directory of the project, and type: $ npm install.  Node Package Manager will begin installing all required dependencies._
-*
+* _The user will have to get their own Firebase API key for this project to work.  
 
 ## Requirements
 
 *
 ## Known Bugs
 
-_*The list of results contact phone numbers has not been cleaned of array special characters (ex: [ ])._
+_*The app appears to compile, but throws an error message about not being able to find the module firebase/app.._
 
 ## Support and contact details
 
