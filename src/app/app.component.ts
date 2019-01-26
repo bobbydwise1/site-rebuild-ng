@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { Picture } from './models/picture.model'
+import { Component, Input } from '@angular/core';
+import { Picture } from './models/picture.model';
 
 @Component({
   selector: 'app-root',
@@ -19,16 +19,4 @@ export class AppComponent {
     new Picture(3,"picture 1","filename1")
   ];
 
-
-  addPicture(newPicture: Picture) {
-    this.masterPictureList.push(newPicture);
-  }
-
-  editPicture(clickedPicture) {
-     this.selectedPicture = clickedPicture;
-   }
-
-   finishedEditing() {
-    this.selectedPicture = null;
-  }
 }

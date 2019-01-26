@@ -1,7 +1,4 @@
 <h2>Picture Gallery</h2>
-
-<div *ngFor="let picture of pictures | async" (click)="goToDetailPage(picture)" class="panel panel-default">
-  <div class="panel-body">
-    <h3><em>{{picture.title}}</em> by {{picture.file}}</h3>
-  </div>
-</div>
+<ul>
+  <li *ngFor="let currentPicture of childPictureList">{{currentPicture.title}} {{currentPicture.file}}</li>
+</ul>

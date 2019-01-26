@@ -1,17 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Picture } from '../models/picture.model';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-picture',
   templateUrl: './picture.component.html',
   styleUrls: ['./picture.component.css']
 })
-export class PictureComponent implements OnInit {
-  key: string;
-  name: string;
-  url: string;
-  file: File;
-
-  constructor(file: File) {
-    this.file = File;
-  }
+export class PictureComponent {
 }
