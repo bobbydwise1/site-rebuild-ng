@@ -7,7 +7,6 @@ import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 
-import { GalleryComponent } from './gallery/gallery.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
 import { PictureComponent } from './picture/picture.component';
 
@@ -23,7 +22,6 @@ export const firebaseConfig = {
   declarations: [
     AppComponent,
     SearchBarComponent,
-    GalleryComponent,
     PictureComponent
   ],
   imports: [
