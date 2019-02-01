@@ -6,13 +6,21 @@ import { CreateComponent } from './create/create.component';
 import { UpdateComponent } from './update/update.component';
 import { DeleteComponent } from './delete/delete.component';
 import { GalleryDetailComponent } from './gallery-detail/gallery-detail.component'
-import { ArtistComponent } from './update/update.component';
-import { ProfileComponent } from './delete/delete.component';
+import { ArtistComponent } from './artist/artist.component';
+import { ProfileComponent } from './profile/profile.component';
 
 const appRoutes: Routes = [
   {
     path: '',
     component: WelcomeComponent
+  },
+  {
+    path: 'artist',
+    component: ArtistComponent
+  },
+  {
+    path: 'profile',
+    component: ProfileComponent
   },
   {
     path: 'gallery',
@@ -33,10 +41,6 @@ const appRoutes: Routes = [
   {
     path: 'delete',
     component: DeleteComponent
-  },
-  {
-    path: '**',
-    component: PageNotFoundComponent
   }
 
 ];
