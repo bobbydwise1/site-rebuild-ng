@@ -17,32 +17,33 @@ const appRoutes: Routes = [
   {
     path: 'artist',
     component: ArtistComponent
+    children: [
+      {
+        path: 'profile',
+        component: ProfileComponent
+      },
+      {
+        path: 'gallery',
+        component: GalleryComponent
+      },
+      {
+        path: 'gallerys/:id',
+        component: GalleryDetailComponent //This is an image
+      },
+      {
+        path: 'create',
+        component: CreateComponent
+      },
+      {
+        path: 'update',
+        component: UpdateComponent
+      },
+      {
+        path: 'delete',
+        component: DeleteComponent
+      }
+    ]
   },
-  {
-    path: 'profile',
-    component: ProfileComponent
-  },
-  {
-    path: 'gallery',
-    component: GalleryComponent
-  },
-  {
-    path: 'gallerys/:id',
-    component: GalleryDetailComponent //This is an image
-  },
-  {
-    path: 'create',
-    component: CreateComponent
-  },
-  {
-    path: 'update',
-    component: UpdateComponent
-  },
-  {
-    path: 'delete',
-    component: DeleteComponent
-  }
-
 ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);
