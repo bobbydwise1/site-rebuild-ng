@@ -10,11 +10,17 @@ import { CreateComponent } from './artist/create/create.component';
 import { UpdateComponent } from './artist/update/update.component';
 import { DeleteComponent } from './artist/delete/delete.component';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { UploadListComponent } from './uploads/upload-list/upload-list.component';
+import { UploadFormComponent } from './uploads/upload-form/upload-form.component';
 
 const appRoutes: Routes = [
   {
     path: '',
     component: WelcomeComponent
+  },
+  {
+    path: 'uploadForm',
+    component: UploadFormComponent
   },
   {
     path: 'artist',
