@@ -30,15 +30,14 @@ export class CreateComponent implements OnInit {
     this.gallerys = this.galleryService.getGallerys();
   }
 
+
   submitForm(
-      name: string,
-      creator: string,
+      galleryName: string,
+      galleryCreator: string,
       galleryDescription: string,
-      fundGoal: number,
-      fundDescription: string,
-      reward: string)
+      )
       {
-        var newGallery: Gallery = new Gallery(name, creator, galleryDescription, fundGoal, fundDescription, reward);
+        var newGallery: Gallery = new Gallery(galleryName,galleryCreator,galleryDescription);
         this.galleryService.addGallery(newGallery);
       }
 }

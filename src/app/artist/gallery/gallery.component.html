@@ -3,6 +3,6 @@
 
 <div *ngFor="let gallery of gallerys | async"  class="panel panel-default">
   <div class="panel-body">
-    <h3 (click)="goToDetailPage(gallery)"><em>{{gallery.name}}</em> by {{gallery.creator}}</h3>
+    <h3 (click)="goToDetailPage(gallery)"><em>{{gallery.galleryName}}</em></h3>
   </div>
 </div>
