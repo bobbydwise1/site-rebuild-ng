@@ -43,7 +43,7 @@ const appRoutes: Routes = [
       {
         path: 'delete',
         component: DeleteComponent
-      },
+      }
     ]
   }
 ];

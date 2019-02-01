@@ -1,1 +1,4 @@
-/* You can add global styles to this file, and also import other style files */
+/* Note this is the global CSS file */
+body {
+  background-color: #ccd9c8;
+}
