@@ -7,65 +7,42 @@
   </div>
   <div class="panel-body">
     <div>
+
       <div>
-        <label>Gallery Title:</label>
+        <label>Gallery Name:</label>
         <br>
-        <input #newName>
+        <input #newgalleryName>
       </div>
 
       <div>
         <label>Gallery Artist:</label>
         <br>
-        <input #newCreator>
+        <input #newgalleryCreator>
       </div>
 
       <div>
         <label>Gallery Description:</label>
         <br>
-        <textarea #newGalleryDescription></textarea>
+        <textarea #newgalleryDescription></textarea>
       </div>
 
-      <div>
-        <label>Funding Goal:</label>
-        <br>
-        <textarea #newFundGoal></textarea>
-      </div>
-
-      <div>
-        <label>Fund Description:</label>
-        <br>
-        <textarea #newFundDescription></textarea>
-      </div>
-
-      <div>
-        <label>Reward:</label>
-        <br>
-        <textarea #newReward></textarea>
-      </div>
-
-
-      <button (click)="submitForm(
-      newName.value,
-      newCreator.value,
-      newGalleryDescription.value,
-      newFundGoal.value,
-      newFundDescription.value,
-      newReward.value);
-
-      newName.value='';
-      newCreator.value='';
-      newGalleryDescription.value='';
-      newFundGoal.value='';
-      newFundDescription.value='';
-      newReward.value='';
-      ">Add</button>
     </div>
+      <button (click)="submitForm(
+      newgalleryName.value,
+      newgalleryCreator.value,
+      newgalleryDescription.value
+      );
+
+      newgalleryName.value='';
+      newgalleryCreator.value='';
+      newgalleryDescription.value='';
+      ">Add</button>
   </div>
 </div>
 
 
 <ul *ngFor="let gallery of gallerys | async"  class="">
-  <li class="">
-    <p><em>{{gallery.name}}</em> by {{gallery.creator}}</p>
+  <li class=""><p>Below is a short list of all galleries</p>
+    <p><em>{{gallery.galleryName}}</em></p>
   </li>
 </ul>
