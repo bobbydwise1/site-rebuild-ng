@@ -6,7 +6,8 @@ import { CreateComponent } from './create/create.component';
 import { UpdateComponent } from './update/update.component';
 import { DeleteComponent } from './delete/delete.component';
 import { GalleryDetailComponent } from './gallery-detail/gallery-detail.component'
-
+import { ArtistComponent } from './update/update.component';
+import { ProfileComponent } from './delete/delete.component';
 
 const appRoutes: Routes = [
   {
@@ -19,7 +20,7 @@ const appRoutes: Routes = [
   },
   {
     path: 'gallerys/:id',
-    component: GalleryDetailComponent
+    component: GalleryDetailComponent //This is an image
   },
   {
     path: 'create',
@@ -33,6 +34,10 @@ const appRoutes: Routes = [
     path: 'delete',
     component: DeleteComponent
   },
+  {
+    path: '**',
+    component: PageNotFoundComponent
+  }
 
 ];
 

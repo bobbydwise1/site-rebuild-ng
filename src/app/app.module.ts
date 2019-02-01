@@ -13,6 +13,8 @@ import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { GalleryDetailComponent } from './gallery-detail/gallery-detail.component';
+import { ArtistComponent } from './artist/artist.component';
+import { ProfileComponent } from './profile/profile.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -30,7 +32,9 @@ export const firebaseConfig = {
     CreateComponent,
     UpdateComponent,
     DeleteComponent,
-    GalleryDetailComponent
+    GalleryDetailComponent,
+    ArtistComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
