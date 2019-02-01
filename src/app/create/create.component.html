@@ -1,0 +1,71 @@
+<h1>Create Gallerys Page</h1>
+<h3>Add a new gallery below!</h3>
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Add New Gallery!</h3>
+  </div>
+  <div class="panel-body">
+    <div>
+      <div>
+        <label>Gallery Title:</label>
+        <br>
+        <input #newName>
+      </div>
+
+      <div>
+        <label>Gallery Artist:</label>
+        <br>
+        <input #newCreator>
+      </div>
+
+      <div>
+        <label>Gallery Description:</label>
+        <br>
+        <textarea #newGalleryDescription></textarea>
+      </div>
+
+      <div>
+        <label>Funding Goal:</label>
+        <br>
+        <textarea #newFundGoal></textarea>
+      </div>
+
+      <div>
+        <label>Fund Description:</label>
+        <br>
+        <textarea #newFundDescription></textarea>
+      </div>
+
+      <div>
+        <label>Reward:</label>
+        <br>
+        <textarea #newReward></textarea>
+      </div>
+
+
+      <button (click)="submitForm(
+      newName.value,
+      newCreator.value,
+      newGalleryDescription.value,
+      newFundGoal.value,
+      newFundDescription.value,
+      newReward.value);
+
+      newName.value='';
+      newCreator.value='';
+      newGalleryDescription.value='';
+      newFundGoal.value='';
+      newFundDescription.value='';
+      newReward.value='';
+      ">Add</button>
+    </div>
+  </div>
+</div>
+
+
+<ul *ngFor="let gallery of gallerys | async"  class="">
+  <li class="">
+    <p><em>{{gallery.name}}</em> by {{gallery.creator}}</p>
+  </li>
+</ul>

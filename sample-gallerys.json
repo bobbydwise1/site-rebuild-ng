@@ -1,0 +1,23 @@
+{ "gallerys": [{
+    "name": "Gallery Generic Name 1",
+    "creator": "John Doe 1",
+    "galleryDescription": "Generic gallery description 1.",
+    "fundGoal": "100000",
+    "fundDescription": "Generic fund description 1.",
+    "reward": "Free cookies."
+    }, {
+    "name": "Gallery Generic Name 2",
+    "creator": "Jane Doe 2",
+    "galleryDescription": "Generic gallery description 2.",
+    "fundGoal": "2000000",
+    "fundDescription": "Generic fund description 2.",
+    "reward": "A pat on the back."
+  }, {
+    "name": "Gallery Generic Name 3",
+    "creator": "Another Person the 3",
+    "galleryDescription": "Generic gallery description 3.",
+    "fundGoal": "3000",
+    "fundDescription": "Generic fund description 3.",
+    "reward": "The feeling that you helped somebody."
+  }]
+}

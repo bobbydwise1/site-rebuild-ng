@@ -6,12 +6,13 @@
 /tmp
 /out-tsc
 
+
 # dependencies
 /node_modules
 
 # IDEs and editors
 /.idea
-.project
+.gallery
 .classpath
 .c9/
 *.launch
@@ -41,6 +42,3 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
-
-#Firebase credentials
-/src/app/api-keys.ts

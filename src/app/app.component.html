@@ -1,10 +1,17 @@
-<div style="text-align: center">
-  <h1>This is the app component html</h1>
-  <h3>{{ currentFocus }}</h3>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" routerLink="">Welcome Page</a>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a routerLink="gallery">View Gallerys</a></li>
+      <li><a routerLink="create">Create Gallerys</a></li>
+      <li><a routerLink="update">Update Gallerys</a></li>
+      <li><a routerLink="delete">Delete Gallerys</a></li>
+    </ul>
+  </div>
+</nav>
 
+<h1>{{title}}</h1>
 
-  <p> search bar should appear below here:</p>
-  <app-search-bar></app-search-bar>
-
-  <p> pictures should appear below here:</p>
-  <app-picture [childPicture]="masterPictureList"></app-picture>
+<router-outlet></router-outlet>

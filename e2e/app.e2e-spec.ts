@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('site-rebuild-ng App', () => {
+describe('crowdfunding App', () => {
   let page: AppPage;
 
   beforeEach(() => {
