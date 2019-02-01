@@ -1,8 +1,0 @@
-<h1>Gallerys Page</h1>
-<h3>Below is a list of gallery ideas requesting funding!</h3>
-
-<div *ngFor="let gallery of gallerys | async"  class="panel panel-default">
-  <div class="panel-body">
-    <h3 (click)="goToDetailPage(gallery)"><em>{{gallery.name}}</em> by {{gallery.creator}}</h3>
-  </div>
-</div>

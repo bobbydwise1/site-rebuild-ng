@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
-import { Gallery } from '../model/gallery.model';
-import { GalleryService } from '../gallery.service';
+import { Gallery } from '../../model/gallery.model';
+import { GalleryService } from '../../gallery.service';
 import { FirebaseObjectObservable } from 'angularfire2/database';
 import * as firebase from "firebase";
 

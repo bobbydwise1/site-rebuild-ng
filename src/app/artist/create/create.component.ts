@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { GalleryService } from '../gallery.service';
-import { Gallery } from '../model/gallery.model';
+import { GalleryService } from '../../gallery.service';
+import { Gallery } from '../../model/gallery.model';
 import * as firebase from "firebase";
 import { FirebaseListObservable } from 'angularfire2/database';
 import { Router } from '@angular/router';

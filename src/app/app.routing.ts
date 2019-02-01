@@ -1,13 +1,15 @@
 import { ModuleWithProviders }  from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { WelcomeComponent } from './welcome/welcome.component';
-import { GalleryComponent } from './gallery/gallery.component';
-import { CreateComponent } from './create/create.component';
-import { UpdateComponent } from './update/update.component';
-import { DeleteComponent } from './delete/delete.component';
-import { GalleryDetailComponent } from './gallery-detail/gallery-detail.component'
+
+import { AppComponent } from './app.component';
 import { ArtistComponent } from './artist/artist.component';
-import { ProfileComponent } from './profile/profile.component';
+import { ProfileComponent } from './artist/profile/profile.component';
+import { GalleryComponent } from './artist/gallery/gallery.component';
+import { GalleryDetailComponent } from './artist/gallery-detail/gallery-detail.component';
+import { CreateComponent } from './artist/create/create.component';
+import { UpdateComponent } from './artist/update/update.component';
+import { DeleteComponent } from './artist/delete/delete.component';
+import { WelcomeComponent } from './welcome/welcome.component';
 
 const appRoutes: Routes = [
   {
@@ -43,7 +45,7 @@ const appRoutes: Routes = [
         component: DeleteComponent
       }
     ]
-  },
+  }
 ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);
