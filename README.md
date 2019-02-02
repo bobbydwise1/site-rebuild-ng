@@ -1,4 +1,4 @@
-# _Site Rebuild using Angular Framework_
+# _Site Rebuild of DeviantArt.com using Angular Framework_
 
 #### _Clone an existing website from scratch using the Angular framework._
 
@@ -20,26 +20,30 @@ Attempt to clone the look and functioning of website of your choosing using the 
 
 ## Known Bugs
 
-* The app appears to compile, but throws an error message about not being able to find the module firebase/app.
-* Parent - Child relationships appear to be broken.
+* The app does not compile.  This error is be related to Firebase CRUD.
+
+## Working Features
+
+* Gallery CR (of "CRUD")
+* Base template of simplified website.
 
 ## Eventual Features
 
-* Full CRUD connection to Firebase database for images.
+* The most important required feature is to get Full CRUD connection to Firebase database for images working.  This is still on going.
+* Full artist profile CRUD.
 * Gallery viewing mode.
 * Individual image viewing mode.
 * Individual image viewing mode has semi-threaded message board.
-* Image rating system.
 * User / Admin login.
 
 
 ## Support and contact details
 
-_{Contact Robert Lee at bobbydwise1@hotmail.com}_
+_Contact Robert Lee at bobbydwise1@hotmail.com_
 
 ## Technologies Used
 
-_Atom editor, Javascript, jQuery, HTML, CSS, NPM, Bootstrap, Angular._
+_Atom editor, Javascript, jQuery, HTML, CSS, NPM, Bootstrap, Angular, Firebase._
 
 ### License
 
