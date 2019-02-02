@@ -12,7 +12,17 @@ Attempt to clone the look and functioning of website of your choosing using the 
 
 * _Clone the project files from the associated Github repository._
 * _Navigate to the root directory of the project, and type: $ npm install.  Node Package Manager will begin installing all required dependencies._
-* _The user will have to get their own Firebase API key for this project to work._
+* _The user will have to get their own Firebase API key for this project to work.  In order to do this, you must get a developer Firebase account.  Go to the following website to get started:_
+
+https://console.firebase.google.com/
+
+* _Create an api-key.ts file under the folder path src/app.  There is a template file named src/app/api-keys-template.ts that you can use to copy your Firebase API keys and credentials into._
+
+* _At the folder root path, type:_
+
+$ ng serve
+
+* _If the application has not started in your web browser, got to the URL:  localhost:4200._
 
 ## Completed Features
 
