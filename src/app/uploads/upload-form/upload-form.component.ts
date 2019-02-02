@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { UploadService } from '../shared/upload.service';
 import { Upload } from '../shared/upload';
+import { Router } from '@angular/router';
+import { UploadService } from '../shared/upload.service';
+import { FirebaseListObservable } from 'angularfire2/database';
 import * as _ from "lodash";
 
 @Component({

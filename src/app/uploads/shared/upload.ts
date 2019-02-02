@@ -1,4 +1,5 @@
 export class Upload {
+
   $key: string;
   file:File;
   name:string;
@@ -9,5 +10,4 @@ export class Upload {
   constructor(file:File) {
     this.file = file;
   }
-
 }

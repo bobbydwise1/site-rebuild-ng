@@ -24,7 +24,7 @@ const appRoutes: Routes = [
   },
   {
     path: 'artist',
-    component: ArtistComponent
+    component: ArtistComponent,
     children: [
       {
         path: 'profile',
