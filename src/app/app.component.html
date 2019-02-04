@@ -16,7 +16,14 @@
     </ul>
   </div>
 </nav>
-
-<h1>{{title}}</h1>
-
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav navbar-left">
+      <li><a routerLink="artist/profile">BROWSE</a></li>
+      <li><a routerLink="artist/gallery">WATCH</a></li>
+      <li><a routerLink="artist/create">NOTIFICATIONS</a></li>
+      <li><a routerLink="artist/create">NOTES</a></li>
+    </ul>
+  </div>
+</nav>
 <router-outlet></router-outlet>

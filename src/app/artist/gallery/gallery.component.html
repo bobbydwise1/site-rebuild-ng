@@ -1,8 +1,41 @@
-<h1>Gallerys Page</h1>
-<h3>Below is a list of gallery ideas requesting funding!</h3>
-
 <div *ngFor="let gallery of gallerys | async"  class="panel panel-default">
   <div class="panel-body">
     <h3 (click)="goToDetailPage(gallery)"><em>{{gallery.galleryName}}</em></h3>
   </div>
 </div>
+
+<h1>Gallery List</h1>
+  <div class="row">
+    <div class="col-sm-2">
+      <div class="container">
+        <div>
+          <p>Gallery 1</p>
+        </div>
+        <div>
+          <p>Gallery 2</p>
+        </div>
+        <div>
+          <p>Gallery 3</p>
+        </div>
+        <div>
+          <p>Gallery 4</p>
+        </div>
+        <div>
+          <p>Gallery 5</p>
+        </div>
+        <div>
+          <p>Gallery 6</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-10">
+      <div class="panel panel-default">
+        <div class="panel-heading">Example Grid</div>
+        <div class="panel-body">
+          <img src="../../assets/Test_card.png" style="width:50%;height:auto;object-fit:contain">
+          <p>Description.</p>
+        </div>
+      </div>
+    </div>
+  </div>

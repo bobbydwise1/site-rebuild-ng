@@ -17,9 +17,6 @@ import { CreateComponent } from './artist/create/create.component';
 import { UpdateComponent } from './artist/update/update.component';
 import { DeleteComponent } from './artist/delete/delete.component';
 import { WelcomeComponent } from './welcome/welcome.component';
-import { UploadListComponent } from './uploads/upload-list/upload-list.component';
-import { UploadFormComponent } from './uploads/upload-form/upload-form.component';
-
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -39,9 +36,7 @@ export const firebaseConfig = {
     DeleteComponent,
     GalleryDetailComponent,
     ArtistComponent,
-    ProfileComponent,
-    UploadListComponent,
-    UploadFormComponent
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
