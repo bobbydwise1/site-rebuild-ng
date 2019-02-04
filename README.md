@@ -27,25 +27,22 @@ $ ng serve
 ## Completed Features
 
 * Firebase Database connection was established.
+* Create and Read connection to Firebase established for gallery data.
+* Basic website skeleton in place.
+* Parent-child routes established and working for artist and sub components.
 
 ## Known Bugs
 
-* The app does not compile.  This error is be related to Firebase CRUD.
-
-## Working Features
-
-* Gallery CR (of "CRUD")
-* Base template of simplified website.
+* Many of the HTML components are non-functional, and are only stand-ins.
 
 ## Eventual Features
 
-* The most important required feature is to get Full CRUD connection to Firebase database for images working.  This is still on going.
+* Complete CRUD UI/BI for files transfer to Firebase has not been established, along with files metadata CRUD.
 * Full artist profile CRUD.
-* Gallery viewing mode.
-* Individual image viewing mode.
+* Full gallery CRUD.
+  * Individual image viewing mode.
 * Individual image viewing mode has semi-threaded message board.
 * User / Admin login.
-
 
 ## Support and contact details
 
@@ -57,7 +54,7 @@ _Atom editor, Javascript, jQuery, HTML, CSS, NPM, Bootstrap, Angular, Firebase._
 
 ### License
 
-*This application is Licensed under the MIT software License agreement. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.*
+*This application is Licensed under the MIT software License agreement. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON INFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.*
 
 Copyrighted material used under fair use.  No Copyright Infringement intended.
 
